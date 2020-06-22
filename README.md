@@ -1,0 +1,1 @@
+Just a simple task from The Odin Project - trying to recreate main Google.com website.
