@@ -3,6 +3,68 @@ body {
     margin: 0;
 }
 
+#header-div {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#header-div-left {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    margin-top: 3vh;
+    
+}
+
+#header-div-left a {
+    color: rgb(0,0,0);
+    margin-left: 2vw;
+    text-decoration: none;
+    text-decoration-color: rgb(0,0,0);
+    font-size: 0.9rem;
+    opacity: 0.75;
+}
+
+#header-div-right {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    margin-top: 3vh;
+    margin-right: 2vw;
+}
+
+#header-div-right a {
+    color: rgb(0,0,0);
+    margin-left: 2vw;
+    text-decoration: none;
+    text-decoration-color: rgb(0,0,0);
+    font-size: 0.9rem;
+    opacity: 0.75;
+}
+
+#sign-in-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sign-in-div a {
+    background-color: rgb(0,0,0);
+    background-image: linear-gradient(rgb(60, 130, 240), rgb(55, 115, 215));
+    background-origin: padding-box;
+    border: 1px solid rgb(66, 133, 244);
+    border-radius: 2px;
+    padding: 1vh 1vw;
+    color: white;
+    font-weight: bold;
+    text-decoration: rgb(255, 255, 255);
+    text-decoration-color: rgb(255, 255, 255);
+    text-decoration-style: solid;
+    text-align: left;
+}
+
 #logo-div {
     margin: 0 auto;
     width: 100vw;
@@ -25,15 +87,30 @@ body {
     
 }
 
-#searchbar-div [type="text"] {
+#searchbox-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 40vw;
-    height: 1.5rem;
-    border-radius: 10px;
+    height: 2rem;
+    border: 1px solid rgba(223, 225, 229, 1);
+    border-radius: 24px;
+}
+
+#searchbox-div:hover {
+    box-shadow: rgba(32, 33, 36, 0.28) 0px 1px 6px 0px;
+}
+
+#searchbox-div [type="text"] {
+    width: 93%;
+    height: 1rem;
     padding: 1%;
     font-size: 1rem;
     font-weight: 200;
-    border: 1px solid rgb(242, 242, 242);;
+    border: none;
+    background-color: white;
 }
+
 
 #search-buttons {
     width: 100%;
@@ -43,16 +120,51 @@ body {
     margin: 2vh 0 0 0;
 }
 
-#search-buttons [type="button"] {
+#search-buttons [type="submit"] {
     background-color: rgb(242, 242, 242);
     border: 1px solid rgba(1, 1, 1, 0);
     font-size: 1rem;
+    color: rgb(95, 99, 104);
     margin: 0 1vw;
     padding: 1vh 2vw;
     border-radius: 4px;
 }
 
-#search-buttons [type="button"]:hover {
-    border: 1px solid rgb(214, 214, 214);
+#search-buttons [type="submit"]:hover {
     box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    border: 1px solid rgb(198, 198, 198);
+    color: rgb(34, 34, 34);
+}
+
+#language-div {
+    margin: 5vh auto;
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+#footer-div {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    background-color: rgb(242, 242, 242);
+    color: rgb(95, 99, 104);
+    font-size: 0.9rem;
+}
+
+
+#footer-div > div {
+    border-top: 1px solid rgb(228, 228, 228);
+    line-height: 2.5rem;
+    padding-left: 1.5vw;
+}
+
+#footer-div-flex {
+    display: flex;
+    justify-content: space-between;
+}
+#footer-div a{
+    color: rgb(95, 99, 104);
+    text-decoration: rgb(95, 99, 104);
+    padding-right: 1.5vw;
 }
